@@ -15,12 +15,16 @@
 body {
     font-size: 18px;
     font-family: "Epilogue", system-ui;
+    background-color: var(--WHITE);
 }
 header {
     display: flex;
     justify-content: space-between;
     width: 90vw;
     margin: auto;
+}
+.logo {
+    margin-top: 12px;
 }
 .nav_section {
     display: flex;
@@ -48,6 +52,10 @@ a {
     color: var(--GRAY);
     font-size: .8rem;
     font-weight: 500;
+    cursor: pointer;
+}
+a:hover {
+    color: var(--BLACK);
 }
 .sign_up {
     display: flex;
@@ -61,6 +69,7 @@ a {
     color: var(--GRAY);
     font-weight: 700;
     background-color: transparent;
+    cursor: pointer;
 }
 .register_button {
     padding: .8rem;
@@ -70,6 +79,7 @@ a {
     border: 2px solid var(--GRAY);
     border-radius: 10px;
     background-color: transparent;
+    cursor: pointer;
 }
 .info_section {
     display: flex;
@@ -84,7 +94,7 @@ a {
     gap: 3rem;
 }
 .remote_heading {
-    width: 60%;
+    width: 57%;
 }
 h1 {
     font-size: 4rem;
@@ -110,6 +120,12 @@ h1 {
     color: var(--WHITE);
     border: 0;
     border-radius: 8px;
+    cursor: pointer;
+}
+.learn_more_button:hover {
+    background-color: var(--WHITE);
+    color: var(--BLACK);
+    border: 1.5px solid var(--GRAY);
 }
 .sponsors {
     display: flex;
