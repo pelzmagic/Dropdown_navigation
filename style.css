@@ -40,6 +40,7 @@ header {
     justify-content: space-between;
     align-items: center;
     /* width: 70%; */
+    position: relative;
 }
 span {
     margin-inline-start: .5rem;
@@ -135,4 +136,35 @@ h1 {
 }
 .second_section {
     width: 40%;
+}
+.sub_menu1 {
+    /* border: 1px solid red; */
+    width: 9rem;
+    padding: 1rem;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    position: absolute;
+    top: 2rem;
+    left: -4.2rem;
+    display: none;
+}
+.sub_menu1 li {
+    font-size: .8rem;
+    display: inline-flex;
+    gap: .7rem;
+    margin-top: .4rem;
+}
+.sub_menu2 {
+    width: 6rem;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    padding: 1rem;
+    position: absolute;
+    top: 2rem;
+    left: 7rem;
+    display: none;
+}
+.sub_menu2 li {
+    font-size: .8rem;
+    margin-top: .7rem;
 }
