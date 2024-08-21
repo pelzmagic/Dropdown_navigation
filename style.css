@@ -168,3 +168,17 @@ h1 {
     font-size: .8rem;
     margin-top: .7rem;
 }
+.features_arrow_down {
+    transition: transform 0.3s ease;
+}
+.company_arrow_down {
+    transition: transform 0.3s ease;
+}
+.dropdown_toggle {
+    border: 0;
+    background-color: transparent;
+}
+.company_dropdown_toggle {
+    border: 0;
+    background-color: transparent;
+}
