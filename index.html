@@ -3,17 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./style.css">
   <script src="./script.js" defer charset="UTF-8"></script>
   <title>Intro section</title>
 </head>
 <body>
   <header>
+    <div class="logo">
+      <img src="./images/logo.svg" alt="a logo">
+    </div>
+    <button class="mobile_nav_toggle" aria-expanded="false"><span class="sr-only"></span></button>
     <div class="nav_section">
-      <div class="logo">
-        <img src="./images/logo.svg" alt="a logo">
-      </div>
       <div class="navigation">
         <ul class="nav_items">
           <li><a href="#">Features</a><span><button class="dropdown_toggle"><img src="./images/icon-arrow-down.svg" alt="arrow pointing down" class="features_arrow_down"</button></span>
@@ -39,16 +40,57 @@
           <li><a href="#">About</a></li>
         </ul>
       </div>
-    </div>
-    <div class="sign_up">
-      <div class="log_in">
-        <button class="log_button">Login</button>
+      <div class="sign_up">
+        <div class="log_in">
+          <button class="log_button">Login</button>
+        </div>
+        <div class="register">
+          <button class="register_button">Register</button>
+        </div>
       </div>
-      <div class="register">
-        <button class="register_button">Register</button>
+    </div>
+
+
+    <!-- MOBILE NAVIGATION -->
+
+    <div class="mobile_nav_section" data-visible="false">
+      <div class="mobile_navigation">
+        <ul class="mobile_nav_items">
+          <li><a href="#">Features</a><span><button class="features_dropdown_toggle"><img src="./images/icon-arrow-down.svg" alt="arrow pointing down" class="mobile_features_arrow_down"</button></span>
+          </li>
+          <div class="mobile_sub_menu1">
+            <ul>
+              <li><img src="./images/icon-todo.svg" alt="T0-DO Notes" class="todo_notes">Todo List</li>
+              <li><img src="./images/icon-calendar.svg" alt="A calendar" class="calendar">Calendar</li>
+              <li><img src="./images/icon-reminders.svg" alt="An alarm bell" class="alarm_bell">Reminders</li>
+              <li><img src="./images/icon-planning.svg" alt="Plan" class="Planning">Planning</li>
+            </ul>
+          </div>
+          <li><a href="#">Company</a><span><button class="mobile_company_dropdown_toggle"><img src="./images/icon-arrow-down.svg" alt="arrow pointing down" class="mobile_company_arrow_down"</button></span>
+          </li>
+          <div class="mobile_sub_menu2">
+            <ul>
+              <li>History</li>
+              <li>Our Team</li>
+              <li>Blog</li>
+            </ul>
+          </div>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </div>
+      <div class="mobile_sign_up">
+        <div class="mobile_log_in">
+          <button class="log_button">Login</button>
+        </div>
+        <div class="mobile_register">
+          <button class="register_button">Register</button>
+        </div>
       </div>
     </div>
   </header>
+
+
   <main class="info_section">
     <div class="first_section">
       <div class="remote_heading">
@@ -76,7 +118,7 @@
       </div>
     </div>
     <div class="second_section">
-      <img src="./images/image-hero-desktop.png" alt="hero image" width="450" height="530">
+      <img src="./images/image-hero-desktop.png" alt="hero image" width="100%" height="100%">
     </div>
   </main>
 </body>
