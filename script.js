@@ -17,7 +17,7 @@ const mobileNavSection = document.querySelector(".mobile_nav_section");
 const body = document.querySelector("body");
 
 
-mobileNavSection.style.display = "block";
+// mobileNavSection.style.display = "block";
 mobileFeaturesSubMenu.style.display = "none";
 mobileCompanySubMenu.style.display = "none";
 
